@@ -4,8 +4,10 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     Home 
+    <div className="App flex h-[100vh] justify-center bg-gray-400">
+     <div className=' bg-gray-300 h-screen flex-1 max-w-full self-center sm:max-w-sm'>
+        
+     </div>
     </div>
   );
 }
