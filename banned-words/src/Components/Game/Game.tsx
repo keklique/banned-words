@@ -88,7 +88,7 @@ function Game() {
             <div className='h-full w-full flex flex-col justify-evenly py-20 items-center'>
                 <div className='w-full flex flex-row justify-evenly px-2'>
                     {gameInfo.teamNames.map((teamName, index)=>{
-                            return <span className='flex flex-col'>
+                            return <span className='flex flex-col' key={"teams_" + index}>
                                         <h1 className='text-2xl font-semibold'>{teamName}</h1> 
                                         <h2 className='text-2xl'>{ calculateTeamScore(index)}</h2> 
                                     </span>
