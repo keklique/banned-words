@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 
 function Topbar({turnOver}:{turnOver:()=>void}) {
     const TEMP_TURN_DURATION:number = 30;
-    const [timeCounter,setTimeCounter] = useState(30);
+    const [timeCounter,setTimeCounter] = useState(TEMP_TURN_DURATION);
     useEffect(()=>{
         const interval = setInterval(()=>{
-            if(timeCounter!=0)
+            if(timeCounter!==0)
             {
                 setTimeCounter(timeCounter -1);
             }else
