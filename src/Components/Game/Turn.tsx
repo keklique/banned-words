@@ -29,7 +29,7 @@ function Turn({wordSets,setWordSets,turn,endTurn}:{wordSets:Array<IWordSet>,setW
     const onPassButton = () =>
     {
         const tempTurnInfo = turnInfo;
-        tempTurnInfo.falseWords ++;
+        tempTurnInfo.passWords ++;
         setTurnInfo(tempTurnInfo);
         giveNewWord();
     }
@@ -43,7 +43,7 @@ function Turn({wordSets,setWordSets,turn,endTurn}:{wordSets:Array<IWordSet>,setW
 
   return (
     <div className='h-full w-full flex flex-col items-center justify-evenly'>
-        <Topbar turnOver = {turnOver}/>
+        <Topbar turnOver = {turnOver} turnInfo={turnInfo}/>
         <WordBox wordSet ={wordSets[wordSetCount]}/>
         <BottomBar inGameButtons = {inGameButtons}/>
     </div>
