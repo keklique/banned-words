@@ -3,7 +3,7 @@ import timer from '../../Assets/timer.svg'
 import { ITurn } from '../../types/game';
 
 function Topbar({turnOver,turnInfo}:{turnOver:()=>void,turnInfo:ITurn}) {
-    const TEMP_TURN_DURATION:number = 300;
+    const TEMP_TURN_DURATION:number = 30;
     const [timeCounter,setTimeCounter] = useState(TEMP_TURN_DURATION);
     useEffect(()=>{
         const interval = setInterval(()=>{
