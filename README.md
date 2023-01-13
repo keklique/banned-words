@@ -1,7 +1,7 @@
 
 # Banned Words
+[Live Demo](https://bannedwords.vercel.app/)
 Mobile browser word game developed with Reactjs
-[demo](https://bannedwords.vercel.app/)
 
 # Getting Started with Create React App
 
